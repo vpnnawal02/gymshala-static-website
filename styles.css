@@ -4,9 +4,7 @@
   --primary-color: #111317;
   --primary-color-light: #1f2125;
   --primary-color-extra-light: #35373b;
-  --secondary-color:
-    /*#f9ac54*/
-    yellow;
+  --secondary-color: yellow;
   --secondary-color-dark: rgb(206, 206, 1);
   --text-light: #d1d5db;
   --white: #ffffff;
@@ -89,6 +87,10 @@ nav {
 
 .nav__logo {
   max-width: 150px;
+}
+
+.nav__logo h1{
+  display: none;
 }
 
 .nav__links {
@@ -176,10 +178,11 @@ nav {
 }
 
 .header__image::before {
+  width: 100%;
   content: "o";
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 65%;
   transform: translateX(-50%);
   font-size: 40rem;
   font-weight: 400;
@@ -187,6 +190,7 @@ nav {
   color: var(--secondary-color);
   opacity: 0.1;
   z-index: -1;
+  
 }
 
 .header__image img {
@@ -236,9 +240,12 @@ nav {
   border-radius: 10px;
   transition: 0.3s;
 }
+.explore__card i{
+  color: #111317;
+}
 
-.explore__card i {
-  color: black;
+.explore__card a i {
+  color:var(--secondary-color);
 }
 
 .explore__card:hover {
@@ -328,7 +335,7 @@ nav {
 
 .join__grid {
   position: absolute;
-  bottom: -5rem;
+  bottom: -10rem;
   width: calc(100% - 4rem);
   padding: 2rem;
   margin: 0 2rem;
@@ -552,7 +559,7 @@ nav {
 }
 
 .footer__socials a:hover {
-  color: var(--white);
+  color: black;
   background-color: var(--secondary-color);
 }
 
@@ -590,7 +597,26 @@ nav {
 
 @media (width < 900px) {
   .nav__links {
-    display: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__links ul li{
+    font-family: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  button{
+    display: none ;
   }
 
   .header__container {
@@ -604,6 +630,15 @@ nav {
   .explore__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  .join__image img{
+    width: 100%;
+    max-height: fit-content ;
+  }
+
+  .join__grid{
+    position: relative;
   }
 
   .class__container {
@@ -628,10 +663,64 @@ nav {
 }
 
 @media (width < 600px) {
+  .nav__logo img{
+    display: none;
+  }
+
+  .nav__logo h1{
+    display: flex;
+    color: white;
+    font-size : 200%;
+  }
+
+  .nav__logo span{
+    color: var(--secondary-color);
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 0;
+    gap: 0;
+    position: sticky;
+    top: 0;
+    background-color: #111317;
+    z-index: 1;
+    margin-bottom: 1%;
+    padding-bottom: 5px;
+  }
+
+  .nav__links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__links ul li a{
+    
+    font-size: 30%;
+    margin: 0;
+    padding: 0;
+  }
+
+  button{
+    display: none ;
+  }
   .explore__header {
     flex-direction: column;
   }
 
+  .header__image::before{
+    left: 40%;
+    width: 100%;
+  }
   .explore__grid {
     grid-template-columns: repeat(1, 1fr);
   }
