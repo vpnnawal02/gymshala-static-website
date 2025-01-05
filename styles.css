@@ -89,7 +89,7 @@ nav {
   max-width: 150px;
 }
 
-.nav__logo h1{
+.nav__logo h1 {
   display: none;
 }
 
@@ -190,7 +190,7 @@ nav {
   color: var(--secondary-color);
   opacity: 0.1;
   z-index: -1;
-  
+
 }
 
 .header__image img {
@@ -240,12 +240,13 @@ nav {
   border-radius: 10px;
   transition: 0.3s;
 }
-.explore__card i{
+
+.explore__card i {
   color: #111317;
 }
 
 .explore__card a i {
-  color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .explore__card:hover {
@@ -437,8 +438,9 @@ nav {
 }
 
 .price__btn:hover {
-  color: var(--white);
+  color: black;
   background-color: var(--secondary-color);
+  font-weight: bold;
 }
 
 .review {
@@ -604,19 +606,19 @@ nav {
     gap: 1rem;
   }
 
-  ul{
+  ul {
     padding: 0;
     margin: 0;
   }
 
-  .nav__links ul li{
+  .nav__links ul li {
     font-family: 100%;
     margin: 0;
     padding: 0;
   }
 
-  button{
-    display: none ;
+  button {
+    display: none;
   }
 
   .header__container {
@@ -632,12 +634,12 @@ nav {
     gap: 1rem;
   }
 
-  .join__image img{
+  .join__image img {
     width: 100%;
-    max-height: fit-content ;
+    max-height: fit-content;
   }
 
-  .join__grid{
+  .join__grid {
     position: relative;
   }
 
@@ -663,23 +665,24 @@ nav {
 }
 
 @media (width < 600px) {
-  .nav__logo img{
+  .nav__logo img {
     display: none;
   }
 
-  .nav__logo h1{
+  .nav__logo h1 {
     display: flex;
     color: white;
-    font-size : 200%;
+    font-size: 200%;
   }
 
-  .nav__logo span{
+  .nav__logo span {
     color: var(--secondary-color);
   }
-  nav{
+
+  nav {
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
     padding: 0;
     gap: 0;
     position: sticky;
@@ -698,29 +701,31 @@ nav {
     margin: 0;
   }
 
-  ul{
+  ul {
     padding: 0;
     margin: 0;
   }
 
-  .nav__links ul li a{
-    
+  .nav__links ul li a {
+
     font-size: 30%;
     margin: 0;
     padding: 0;
   }
 
-  button{
-    display: none ;
+  button {
+    display: none;
   }
+
   .explore__header {
     flex-direction: column;
   }
 
-  .header__image::before{
+  .header__image::before {
     left: 40%;
     width: 100%;
   }
+
   .explore__grid {
     grid-template-columns: repeat(1, 1fr);
   }
