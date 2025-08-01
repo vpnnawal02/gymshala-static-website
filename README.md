@@ -1,4 +1,5 @@
 # 🌐 FastAPI Contact Website
+Live Preview : https://gymshala-static-website.onrender.com/
 
 This is a responsive contact website built using **FastAPI**, **HTML**, **CSS**, and **Jinja2 templates**. It features a contact form that sends the user’s message via email and shows a success message on the home page after submission.
 
